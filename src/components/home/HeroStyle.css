@@ -1,0 +1,33 @@
+.hero{
+  width: 99%;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero h1{
+  font-size: 6rem;
+}
+.hero h2{
+  margin-bottom:40px;
+}
+.tvl{
+  width:100%;
+  text-align: center;
+  position: absolute;
+  bottom: 5vh;
+}
+.tvl h4{
+  font-weight:0;
+}
+@media screen and (max-width:700px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero h2{
+      font-size:1.2rem;
+    }
+
+    
+}

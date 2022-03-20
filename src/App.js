@@ -1,17 +1,21 @@
-import './App.css';
-import Caver from 'caver-js';
 
-const caver = new Caver('https://kaikas.baobab.klaytn.net:8651/');
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Launch from './pages/Launch'
+import {Provider} from './context/Context'
 
-console.log(caver);
 
 
 function App() {
+ 
   return (
-    <div className="App">
-      hello
-    </div>
-  );
-}
-
-export default App;
+    <Provider>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/Launch/*' element={<Launch />} />
+      </Routes>
+      </Provider>
+      
+  )
+}export default App;

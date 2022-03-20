@@ -1,0 +1,31 @@
+.fl{
+  display:flex;
+}
+.fl h4{
+  font-weight:400;
+}
+.list{
+  display:flex;
+}
+.list h4{
+  font-weight:300;
+  font-size: 14px;
+  color:#e8e8e8;
+}
+.line{
+  margin: 10px;
+  border-bottom: 1px solid grey;
+}
+.history{
+  background: rgba(255,255,255, .05);
+  width:80%;
+  margin:auto;
+  border-radius:20px;
+  padding:10px 20px;
+
+}
+.item{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
